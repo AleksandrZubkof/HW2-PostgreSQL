@@ -2,7 +2,7 @@ select name, year_of_release from music_album
 	where year_of_release = 2018;
 	
 select name, duration from music_track
-	order by duration desc 
+	order by duration desc
 	limit 1;	
 	
 select name, duration from music_track
