@@ -19,3 +19,4 @@ select name from music_track mt
 	where upper("name") like '%лни%' or upper("name") like'%MY%';
 	
 
+1
