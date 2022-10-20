@@ -11,7 +11,7 @@ create table if not exists singer(
 create table if not exists music_album(
 	id SERIAL primary key,
 	name varchar(60) not null,
-	year_of_release integer check(year_of_release < 2023)
+	year_of_release integer check(year_of_release < 2023) 
 );
 
 create table if not exists music_track(
