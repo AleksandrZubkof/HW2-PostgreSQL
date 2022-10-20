@@ -305,7 +305,7 @@ insert into collection_track
 insert into collection_track  
 	values(9, 14);
 
-select * from collection_track;
+
 
 
 

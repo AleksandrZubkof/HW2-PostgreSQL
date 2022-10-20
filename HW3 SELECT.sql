@@ -11,6 +11,7 @@ select name, duration from music_track
 select name from collection
 	where year between 2018 and 2020;
 
+
 select name from singer
 	where name not like '% %'
 	
