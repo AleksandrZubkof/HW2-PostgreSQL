@@ -16,11 +16,12 @@ create table if not exists music_album(
 
 create table if not exists music_track(
 	id SERIAL primary key,
-	music_album_id integer not null references misic_album(id),
+	music_album_id integer not null references music_album(id),
 	name varchar(60) not null,
-	duration numeric(3,2)
+	duration integer
 );
 
+ALTER TABLE music_track ALTER COLUMN duration TYPE integer;
 
 create table if not exists collection(
 	id SERIAL primary key,
@@ -45,3 +46,6 @@ create table if not exists collection_track(
 	music_truck_id integer references music_track(id),
 	constraint ct primary key(collection_id, music_truck_id)
 );
+
+ALTER TABLE music_track
+DROP CONSTRAINT duration;
