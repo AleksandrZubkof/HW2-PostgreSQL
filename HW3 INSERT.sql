@@ -71,6 +71,10 @@ insert into music_album
 insert into music_album 
 	values(9, 'Качели', 2007);
 
+insert into music_album 
+	values(10, 'Баста 40', 2020);
+
+
 select * from music_album;
 
 insert into music_track 
@@ -120,6 +124,10 @@ insert into music_track
 
 insert into music_track 
 	values(15, 9, 'Мутные замуты', 226);
+
+insert into music_track 
+	values(17, 10, 'С самых низов', 339);
+
 
 select * from music_track;
 
@@ -225,6 +233,9 @@ insert into singer_album
 insert into singer_album  
 	values(7, 9);
 
+insert into singer_album  
+	values(7, 10);
+
 select * from singer_album;
 
 insert into collection_track  
@@ -305,12 +316,7 @@ insert into collection_track
 insert into collection_track  
 	values(9, 14);
 
-
-
-
-
-
-1
+select * from collection_track ct ;
 
 
 

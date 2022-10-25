@@ -49,3 +49,8 @@ create table if not exists collection_track(
 
 ALTER TABLE music_track
 DROP CONSTRAINT duration;
+
+
+update collection 
+set "name" = 'Михаил Круг'
+where id = 4;
